@@ -1,0 +1,22 @@
+{
+  "name": "Drupal",
+  "description": "Project template for Drupal 9 projects with a relocated document root",
+  "repository": "https://github.com/el7cosmos/drupal-heroku",
+  "logo": "https://raw.githubusercontent.com/el7cosmos/drupal-heroku/master/logo.svg",
+  "keywords": [
+    "Drupal",
+    "PHP",
+    "CMS"
+  ],
+  "env": {
+    "HASH_SALT": {
+      "description": "Salt for one-time login links, cancel links, form tokens, etc.",
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "heroku-postgresql",
+    "heroku-redis",
+    "scheduler"
+  ]
+}
