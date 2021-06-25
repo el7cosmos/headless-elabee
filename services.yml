@@ -1,0 +1,5 @@
+services:
+  cloudflare.middleware:
+    class: Elabee\Middleware\CloudflareMiddleware
+    tags:
+      - { name: http_middleware, priority: 1000 }

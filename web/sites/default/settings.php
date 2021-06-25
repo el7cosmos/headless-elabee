@@ -689,7 +689,7 @@ $settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_AWS_ELB
  * Load services definition file.
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
-//$settings['container_yamls'][] = $app_root . '/../services.yml';
+$settings['container_yamls'][] = $app_root . '/../services.yml';
 
 /**
  * Override the default service container class.
