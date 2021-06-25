@@ -422,7 +422,7 @@ $settings['reverse_proxy_addresses'] = [$_SERVER['REMOTE_ADDR']];
  * @see \Symfony\Component\HttpFoundation\Request::HEADER_FORWARDED
  * @see \Symfony\Component\HttpFoundation\Request::setTrustedProxies
  */
-$settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_ALL;
+$settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_AWS_ELB;
 
 
 /**
