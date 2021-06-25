@@ -32,6 +32,7 @@
     "require": {
         "php": "^8.0",
         "ext-apcu": "*",
+        "ext-intl": "*",
         "ext-mbstring": "*",
         "ext-redis": "*",
         "composer/installers": "^1.9",
@@ -57,6 +58,17 @@
     },
     "conflict": {
         "drupal/drupal": "*"
+    },
+    "replace": {
+        "paragonie/random_compat": "*",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php80": "*",
+        "symfony/polyfill-intl-idn": "*",
+        "symfony/polyfill-intl-normalizer": "*"
     },
     "autoload": {
         "psr-4": {
