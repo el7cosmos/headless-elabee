@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for eL Abee Codesnippet module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function elabee_codesnippet_form_filter_format_edit_form_alter(&$form) {
+  if (isset($form['editor']['settings']['subform']['plugins']['codesnippet'])) {
+    $form['editor']['settings']['subform']['plugins']['codesnippet']['highlight_languages']['#options']['yaml'] = 'YAML';
+    asort($form['editor']['settings']['subform']['plugins']['codesnippet']['highlight_languages']['#options']);
+  }
+}

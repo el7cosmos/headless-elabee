@@ -1,0 +1,60 @@
+diff --git a/src/Entities/AccessTokenEntity.php b/src/Entities/AccessTokenEntity.php
+index 9c077fe..9a6df16 100644
+--- a/src/Entities/AccessTokenEntity.php
++++ b/src/Entities/AccessTokenEntity.php
+@@ -2,10 +2,7 @@
+ 
+ namespace Drupal\simple_oauth\Entities;
+ 
+-use Lcobucci\JWT\Builder;
+-use Lcobucci\JWT\Signer\Key;
+-use Lcobucci\JWT\Signer\Rsa\Sha256;
+-use League\OAuth2\Server\CryptKey;
++use DateTimeImmutable;
+ use League\OAuth2\Server\Entities\AccessTokenEntityInterface;
+ use League\OAuth2\Server\Entities\Traits\AccessTokenTrait;
+ use League\OAuth2\Server\Entities\Traits\EntityTrait;
+@@ -18,7 +15,7 @@ class AccessTokenEntity implements AccessTokenEntityInterface {
+   /**
+    * {@inheritdoc}
+    */
+-  public function convertToJWT(CryptKey $privateKey) {
++  public function convertToJWT() {
+     $private_claims = [];
+     \Drupal::moduleHandler()->alter('simple_oauth_private_claims', $private_claims, $this);
+     if (!is_array($private_claims)) {
+@@ -27,21 +24,23 @@ class AccessTokenEntity implements AccessTokenEntityInterface {
+       $message .= 'must be an array.';
+       throw new \InvalidArgumentException($message);
+     }
+-    $builder = (new Builder())
+-      ->setAudience($this->getClient()->getIdentifier())
+-      ->setId($this->getIdentifier(), TRUE)
+-      ->setIssuedAt(time())
+-      ->setNotBefore(time())
+-      ->setExpiration($this->getExpiryDateTime()->getTimestamp())
+-      ->setSubject($this->getUserIdentifier())
+-      ->set('scopes', $this->getScopes());
++
++    $this->initJwtConfiguration();
++
++    $builder = $this->jwtConfiguration->builder()
++      ->permittedFor($this->getClient()->getIdentifier())
++      ->identifiedBy($this->getIdentifier())
++      ->issuedAt(new DateTimeImmutable())
++      ->canOnlyBeUsedAfter(new DateTimeImmutable())
++      ->expiresAt($this->getExpiryDateTime())
++      ->relatedTo((string) $this->getUserIdentifier())
++      ->withClaim('scopes', $this->getScopes());
+ 
+     foreach ($private_claims as $claim_name => $value) {
+-      $builder->set($claim_name, $value);
++      $builder->withClaim($claim_name, $value);
+     }
+ 
+-    $key = new Key($privateKey->getKeyPath(), $privateKey->getPassPhrase());
+-    $token = $builder->sign(new Sha256(), $key)->getToken();
++    $token = $builder->getToken($this->jwtConfiguration->signer(), $this->jwtConfiguration->signingKey());
+     return $token;
+   }
+ 

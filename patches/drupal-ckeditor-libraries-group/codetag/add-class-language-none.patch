@@ -1,0 +1,20 @@
+diff --git a/plugin.js b/plugin.js
+index 802f768..bc70d64 100644
+--- a/plugin.js
++++ b/plugin.js
+@@ -3,7 +3,7 @@ CKEDITOR.plugins.add( 'codeTag', {
+   init: function( editor ) {
+     editor.addCommand( 'wrapCode', {
+       exec: function( editor ) {
+-        editor.insertHtml( '<code>' + editor.getSelection().getSelectedText() + '</code>' );
++        editor.insertHtml( '<code class="language-none">' + editor.getSelection().getSelectedText() + '</code>' );
+       }
+     });
+     editor.ui.addButton( 'Code', {
+@@ -12,4 +12,4 @@ CKEDITOR.plugins.add( 'codeTag', {
+       toolbar: 'insert'
+     });
+   }
+-});
+\ No newline at end of file
++});

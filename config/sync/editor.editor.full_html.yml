@@ -1,0 +1,113 @@
+uuid: 774fba78-5f9f-4b73-b9e5-02e82b9dad08
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - '-'
+            - Code
+            - RemoveFormat
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - Table
+            - HorizontalRule
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+            - CodeSnippet
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+            - Maximize
+  plugins:
+    stylescombo:
+      styles: 'div.code-title|Code Title'
+    language:
+      language_list: un
+    codemirror:
+      enable: true
+      startupMode: wysiwyg
+      mode: htmlmixed
+      theme: dracula
+      options:
+        lineNumbers: true
+        lineWrapping: true
+        matchBrackets: true
+        autoCloseTags: true
+        autoCloseBrackets: true
+        enableSearchTools: true
+        enableCodeFolding: true
+        enableCodeFormatting: false
+        autoFormatOnStart: false
+        autoFormatOnModeChange: false
+        autoFormatOnUncomment: false
+    codesnippet:
+      highlight_style: github
+      highlight_languages:
+        bash: bash
+        php: php
+        yaml: yaml
+        apache: 0
+        cs: 0
+        cpp: 0
+        css: 0
+        coffeescript: 0
+        diff: 0
+        html: 0
+        http: 0
+        ini: 0
+        json: 0
+        java: 0
+        javascript: 0
+        makefile: 0
+        markdown: 0
+        nginx: 0
+        objectivec: 0
+        perl: 0
+        python: 0
+        ruby: 0
+        sql: 0
+        vbscript: 0
+        xhtml: 0
+        xml: 0
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

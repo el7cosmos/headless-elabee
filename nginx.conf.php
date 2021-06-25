@@ -1,3 +1,10 @@
+<?php
+
+/**
+ * @file
+ * nginx.conf.php
+ */
+?>
 http {
   include       mime.types;
   default_type  application/octet-stream;
@@ -84,7 +91,7 @@ http {
   # define an easy to reference name that can be used in fastgi_pass
   upstream heroku-fcgi {
     #server 127.0.0.1:4999 max_fails=3 fail_timeout=3s;
-    server unix:/tmp/heroku.fcgi.<?=getenv('PORT')?:'8080'?>.sock max_fails=3 fail_timeout=3s;
+    server unix:/tmp/heroku.fcgi.<?php echo getenv('PORT') ?: '8080'?>.sock max_fails=3 fail_timeout=3s;
     keepalive 16;
   }
 
@@ -110,16 +117,16 @@ http {
     }
 
     server_name localhost;
-    listen <?=getenv('PORT')?:'8080'?>;
+    listen <?php echo getenv('PORT') ?: '8080'?>;
     # FIXME: breaks redirects with foreman
     port_in_redirect off;
 
-    root "<?=getenv('DOCUMENT_ROOT')?:getenv('HEROKU_APP_DIR')?:getcwd()?>";
+    root "<?php echo getenv('DOCUMENT_ROOT') ?: getenv('HEROKU_APP_DIR') ?: getcwd()?>";
 
     error_log stderr;
-    access_log /tmp/heroku.nginx_access.<?=getenv('PORT')?:'8080'?>.log;
+    access_log /tmp/heroku.nginx_access.<?php echo getenv('PORT') ?: '8080'?>.log;
 
-    include "<?=getenv('HEROKU_PHP_NGINX_CONFIG_INCLUDE')?>";
+    include "<?php echo getenv('HEROKU_PHP_NGINX_CONFIG_INCLUDE')?>";
 
     # restrict access to hidden files, just in case
     location ~ /\. {

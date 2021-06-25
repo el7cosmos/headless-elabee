@@ -12,19 +12,44 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "w8tcha/ckeditor-codemirror-plugin",
+                "version": "1.17.11",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor_codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.11/CKEditor-CodeMirror-Plugin.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
+        "php": "^8.0",
         "ext-apcu": "*",
         "ext-mbstring": "*",
         "ext-redis": "*",
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^2.3",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/ckeditor_codemirror": "^2.3",
+        "drupal/ckeditor_markdown": "^1.2",
+        "drupal/codesnippet": "^1.7",
+        "drupal/codetag": "^1.2",
         "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_login": "^1.0@RC",
+        "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/next": "^1.0@beta",
+        "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "w8tcha/ckeditor-codemirror-plugin": "^1.17"
     },
     "require-dev": {
         "drupal/core-dev": "^9.0",
@@ -32,6 +57,11 @@
     },
     "conflict": {
         "drupal/drupal": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elabee\\": "src"
+        }
     },
     "autoload-dev": {
         "files": [
@@ -46,6 +76,7 @@
     },
     "extra": {
         "drupal-scaffold": {
+            "gitignore": true,
             "locations": {
                 "web-root": "web/"
             }
@@ -60,23 +91,16 @@
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
-        "drupal-core-project-message": {
-            "include-keys": ["homepage", "support"],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
-            ]
+        "patches": {
+            "drupal/simple_oauth": {
+                "Update implementation": "patches/drupal/simple_oauth/update-implementation.patch"
+            },
+            "drupal/subrequests": {
+                "Subrequest failed validation": "https://www.drupal.org/files/issues/2019-05-27/3029570-array-not-object.patch"
+            },
+            "drupal-ckeditor-libraries-group/codetag": {
+                "Add class language none": "patches/drupal-ckeditor-libraries-group/codetag/add-class-language-none.patch"
+            }
         }
     }
 }

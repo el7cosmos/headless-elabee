@@ -1,0 +1,12 @@
+parameters:
+  jsonapi.enabled_resource_types:
+    - file--file
+    - node--article
+    - taxonomy_term--tags
+
+services:
+  jsonapi.resource_type.build_subscriber:
+    class: Elabee\EventSubscriber\ResourceTypeBuildSubscriber
+    tags:
+      - { name: event_subscriber }
+    arguments: ['%jsonapi.enabled_resource_types%']
