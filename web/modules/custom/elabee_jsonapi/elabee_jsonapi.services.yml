@@ -5,8 +5,8 @@ parameters:
     - taxonomy_term--tags
 
 services:
-  jsonapi.resource_type.build_subscriber:
-    class: Elabee\EventSubscriber\ResourceTypeBuildSubscriber
+  elabee_jsonapi.event_subscriber:
+    class: Drupal\elabee_jsonapi\EventSubscriber\ElabeeJsonapiSubscriber
+    arguments: ['%jsonapi.enabled_resource_types%']
     tags:
       - { name: event_subscriber }
-    arguments: ['%jsonapi.enabled_resource_types%']

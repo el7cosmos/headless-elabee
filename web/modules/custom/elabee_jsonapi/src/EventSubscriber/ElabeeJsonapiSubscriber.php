@@ -1,29 +1,27 @@
 <?php
 
-namespace Elabee\EventSubscriber;
+namespace Drupal\elabee_jsonapi\EventSubscriber;
 
 use Drupal\jsonapi\ResourceType\ResourceTypeBuildEvent;
 use Drupal\jsonapi\ResourceType\ResourceTypeBuildEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class ResourceTypeBuildSubscriber.
- *
- * @package Elabee\EventSubscriber
+ * Event subscriber for eL Abee JSON:API module.
  */
-class ResourceTypeBuildSubscriber implements EventSubscriberInterface {
+class ElabeeJsonapiSubscriber implements EventSubscriberInterface {
 
   /**
-   * Constructs \Elabee\EventSubscriber\ResourceTypeBuildSubscriber object.
+   * Constructs event subscriber.
    *
    * @param array $enabledResourceTypes
-   *   Enabled resource types.
+   *   The enabled resource types.
    */
   public function __construct(protected array $enabledResourceTypes) {
   }
 
   /**
-   * {@inheritDoc}
+   * {@inheritdoc}
    */
   public static function getSubscribedEvents(): array {
     return [
@@ -32,10 +30,10 @@ class ResourceTypeBuildSubscriber implements EventSubscriberInterface {
   }
 
   /**
-   * Subscribes to \Drupal\jsonapi\ResourceType\ResourceTypeBuildEvent event.
+   * JSON:API resource type construction event handler.
    *
    * @param \Drupal\jsonapi\ResourceType\ResourceTypeBuildEvent $event
-   *   The subscribed event.
+   *   Resource type construction event.
    */
   public function onResourceTypeBuild(ResourceTypeBuildEvent $event): void {
     if (!in_array($event->getResourceTypeName(), $this->enabledResourceTypes, TRUE)) {
