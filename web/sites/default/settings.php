@@ -865,6 +865,15 @@ if (isset($_ENV['REDIS_URL'])) {
 }
 
 /**
+ * S3fs settings.
+ */
+$settings['s3fs.access_key'] = $_ENV['AWS_ACCESS_KEY_ID'];
+$settings['s3fs.secret_key'] = $_ENV['AWS_SECRET_ACCESS_KEY'];
+$settings['s3fs.upload_as_private'] = TRUE;
+$config['s3fs.settings']['bucket'] = $_ENV['S3_BUCKET'];
+$config['s3fs.settings']['hostname'] = $_ENV['S3_HOSTNAME'];
+
+/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,

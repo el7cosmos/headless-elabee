@@ -37,6 +37,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  s3fs: 0
   search: 0
   serialization: 0
   simple_oauth: 0
