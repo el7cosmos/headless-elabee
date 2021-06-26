@@ -4,8 +4,6 @@ module:
   block: 0
   breakpoint: 0
   ckeditor: 0
-  ckeditor_codemirror: 0
-  ckeditor_markdown: 0
   codesnippet: 0
   codetag: 0
   comment: 0

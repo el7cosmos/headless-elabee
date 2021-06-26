@@ -57,23 +57,6 @@ settings:
       styles: 'div.code-title|Code Title'
     language:
       language_list: un
-    codemirror:
-      enable: true
-      startupMode: wysiwyg
-      mode: htmlmixed
-      theme: dracula
-      options:
-        lineNumbers: true
-        lineWrapping: true
-        matchBrackets: true
-        autoCloseTags: true
-        autoCloseBrackets: true
-        enableSearchTools: true
-        enableCodeFolding: true
-        enableCodeFormatting: false
-        autoFormatOnStart: false
-        autoFormatOnModeChange: false
-        autoFormatOnUncomment: false
     codesnippet:
       highlight_style: github
       highlight_languages:

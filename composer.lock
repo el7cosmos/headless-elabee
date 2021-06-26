@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "300d050e0776f631ddbdb428db029d23",
+    "content-hash": "4069ae4e2f67f64c2cbcd3b083137490",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1532,101 +1532,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_codemirror",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_codemirror.git",
-                "reference": "8.x-2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_codemirror-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "dfb00a0ec44953846d689d1e72f40e4201c8a355"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1586020798",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Nickolay Leshchev (Plazik)",
-                    "homepage": "https://www.drupal.org/u/plazik",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Christopher C. Wells (wells)",
-                    "homepage": "https://www.drupal.org/u/wells",
-                    "role": "Co-maintainer"
-                }
-            ],
-            "description": "Adds the CKEditor CodeMirror source syntax highlighter plugin.",
-            "homepage": "https://drupal.org/project/ckeditor_codemirror",
-            "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor_codemirror",
-                "issues": "https://www.drupal.org/project/issues/ckeditor_codemirror?version=8.x"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_markdown",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_markdown.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_markdown-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "73efabe8c4d86ab73b21bd0b8f5cece8688c1b48"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1580498736",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "JeroenT",
-                    "homepage": "https://www.drupal.org/user/2228934"
-                }
-            ],
-            "description": "Enables Markdown Plugin for CKEditor.",
-            "homepage": "https://www.drupal.org/project/ckeditor_markdown",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor_markdown"
             }
         },
         {
@@ -7106,18 +7011,6 @@
                 "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/v3.1.6"
             },
             "time": "2020-11-07T09:06:16+00:00"
-        },
-        {
-            "name": "w8tcha/ckeditor-codemirror-plugin",
-            "version": "1.17.11",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.11/CKEditor-CodeMirror-Plugin.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor_codemirror"
-            }
         },
         {
             "name": "webflo/drupal-finder",
