@@ -11,6 +11,8 @@
   <exclude-pattern>./node_modules/*</exclude-pattern>
   <exclude-pattern>./vendor/*</exclude-pattern>
 
+  <exclude-pattern>./web/sites/default/files/*</exclude-pattern>
+
   <arg name="basepath" value="."/>
   <arg name="colors"/>
   <arg value="np"/>
