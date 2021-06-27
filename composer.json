@@ -52,6 +52,9 @@
     },
     "require-dev": {
         "drupal/core-dev": "^9.0",
+        "mglaman/phpstan-drupal": "^0.12.10",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan-deprecation-rules": "^0.12.6",
         "symfony/dotenv": "^5.1"
     },
     "conflict": {
