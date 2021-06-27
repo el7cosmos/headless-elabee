@@ -65,6 +65,9 @@ use Drupal\redis\Cache\RedisCacheTagsChecksum;
 use Drupal\redis\ClientFactory;
 use Symfony\Component\HttpFoundation\Request;
 
+assert(isset($app_root));
+assert(isset($site_path));
+
 /**
  * Database settings:
  *
@@ -798,13 +801,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 if (isset($_ENV['DATABASE_URL'])) {
   $connection = parse_url($_ENV['DATABASE_URL']);
-
-  $databases['default']['default']['database'] = basename($connection['path']);
-  $databases['default']['default']['username'] = $connection['user'];
-  $databases['default']['default']['password'] = $connection['pass'] ?? NULL;
-  $databases['default']['default']['host'] = $connection['host'];
-  $databases['default']['default']['port'] = $connection['port'];
-  $databases['default']['default']['driver'] = $connection['scheme'] === 'postgres' ? 'pgsql' : $connection['scheme'];
+  if ($connection) {
+    $databases['default']['default']['database'] = basename($connection['path']);
+    $databases['default']['default']['username'] = $connection['user'];
+    $databases['default']['default']['password'] = $connection['pass'] ?? NULL;
+    $databases['default']['default']['host'] = $connection['host'];
+    $databases['default']['default']['port'] = $connection['port'];
+    $databases['default']['default']['driver'] = $connection['scheme'] === 'postgres' ? 'pgsql' : $connection['scheme'];
+  }
 }
 
 /**
@@ -849,17 +853,18 @@ if (isset($_ENV['REDIS_URL'])) {
   $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
   $settings['cache']['bins']['config'] = 'cache.backend.chainedfast';
 
-  $redis = parse_url($_ENV['REDIS_URL']);
-
   $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/redis.services.yml';
   $settings['cache']['default'] = 'cache.backend.redis';
 
-  $settings['redis.connection'] = [
-    'interface' => 'PhpRedis',
-    'host' => $redis['host'],
-    'port' => $redis['port'],
-    'password' => $redis['pass'] ?? NULL,
-  ];
+  $redis = parse_url($_ENV['REDIS_URL']);
+  if ($redis) {
+    $settings['redis.connection'] = [
+      'interface' => 'PhpRedis',
+      'host' => $redis['host'],
+      'port' => $redis['port'],
+      'password' => $redis['pass'] ?? NULL,
+    ];
+  }
 
   $settings['queue_default'] = 'queue.redis';
 }

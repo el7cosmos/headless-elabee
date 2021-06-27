@@ -31,6 +31,8 @@ jobs:
 
       - run: vendor/bin/phpcs
 
+      - run: vendor/bin/phpstan analyse --no-progress --error-format github
+
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 

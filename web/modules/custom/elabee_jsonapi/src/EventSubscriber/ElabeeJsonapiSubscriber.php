@@ -14,7 +14,7 @@ class ElabeeJsonapiSubscriber implements EventSubscriberInterface {
   /**
    * Constructs event subscriber.
    *
-   * @param array $enabledResourceTypes
+   * @param string[] $enabledResourceTypes
    *   The enabled resource types.
    */
   public function __construct(protected array $enabledResourceTypes) {
