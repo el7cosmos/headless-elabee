@@ -9,7 +9,7 @@ use_customhost: true
 hostname: ''
 domain: ''
 use_path_style_endpoint: false
-cache_control_header: ''
+cache_control_header: 'public, max-age=31536000'
 encryption: ''
 use_https: false
 ignore_cache: false
