@@ -41,6 +41,7 @@
         "drupal/codetag": "^1.2",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/file_delete_ui": "^1.0@alpha",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@beta",
