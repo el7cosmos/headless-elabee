@@ -12,6 +12,7 @@
   <exclude-pattern>./vendor/*</exclude-pattern>
 
   <exclude-pattern>./web/sites/default/files/*</exclude-pattern>
+  <exclude-pattern>./web/sites/simpletest/*</exclude-pattern>
 
   <arg name="basepath" value="."/>
   <arg name="colors"/>

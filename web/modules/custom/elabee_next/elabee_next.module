@@ -9,6 +9,8 @@
  * @see https://www.drupal.org/node/2217931
  */
 
+use Drupal\Core\Entity\EntityInterface;
+
 /**
  * Implements hook_config_schema_info_alter().
  *
@@ -21,4 +23,22 @@ function elabee_next_config_schema_info_alter(array &$definitions): void {
     'type' => 'uri',
     'label' => 'Deploy Hook',
   ];
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function elabee_next_entity_insert(EntityInterface $entity): void {
+  /** @var \Drupal\elabee_next\DeployHook $service */
+  $service = \Drupal::service('elabee_next.deploy_hook');
+  $service->trigger($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function elabee_next_entity_update(EntityInterface $entity): void {
+  /** @var \Drupal\elabee_next\DeployHook $service */
+  $service = \Drupal::service('elabee_next.deploy_hook');
+  $service->trigger($entity);
 }
