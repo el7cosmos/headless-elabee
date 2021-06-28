@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for eL Abee Next.js module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_config_schema_info_alter().
+ *
+ * @param array[] $definitions
+ *   Associative array of configuration type definitions keyed by schema type
+ *   names. The elements are themselves array with information about the type.
+ */
+function elabee_next_config_schema_info_alter(array &$definitions): void {
+  $definitions['next.next_site.*']['mapping']['deploy_hook'] = [
+    'type' => 'uri',
+    'label' => 'Deploy Hook',
+  ];
+}

@@ -18,6 +18,7 @@ module:
   editor: 0
   elabee_codesnippet: 0
   elabee_jsonapi: 0
+  elabee_next: 0
   field: 0
   file: 0
   file_delete_ui: 0

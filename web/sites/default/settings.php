@@ -884,6 +884,9 @@ $config['s3fs.settings']['hostname'] = $_ENV['S3_HOSTNAME'];
 $config['next.next_site.blog']['base_url'] = $_ENV['NEXT_SITE_BASE_URL'];
 $config['next.next_site.blog']['preview_url'] = $_ENV['NEXT_SITE_PREVIEW_URL'];
 $config['next.next_site.blog']['preview_secret'] = $_ENV['NEXT_SITE_PREVIEW_SECRET'];
+if ($deploy_hook = $_ENV['NEXT_SITE_DEPLOY_HOOK']) {
+  $config['next.next_site.blog']['deploy_hook'] = $deploy_hook;
+}
 
 /**
  * Load local development override configuration, if available.
