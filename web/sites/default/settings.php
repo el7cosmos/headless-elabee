@@ -879,16 +879,6 @@ $config['s3fs.settings']['bucket'] = $_ENV['S3_BUCKET'];
 $config['s3fs.settings']['hostname'] = $_ENV['S3_HOSTNAME'];
 
 /**
- * Next.js settings.
- */
-$config['next.next_site.blog']['base_url'] = $_ENV['NEXT_SITE_BASE_URL'];
-$config['next.next_site.blog']['preview_url'] = $_ENV['NEXT_SITE_PREVIEW_URL'];
-$config['next.next_site.blog']['preview_secret'] = $_ENV['NEXT_SITE_PREVIEW_SECRET'];
-if ($deploy_hook = $_ENV['NEXT_SITE_DEPLOY_HOOK']) {
-  $config['next.next_site.blog']['deploy_hook'] = $deploy_hook;
-}
-
-/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,

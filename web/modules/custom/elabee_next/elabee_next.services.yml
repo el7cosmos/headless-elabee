@@ -1,8 +1,0 @@
-services:
-  elabee_next.deploy_hook:
-    class: Drupal\elabee_next\DeployHook
-    arguments: ['@http_client', '@logger.channel.next', '@next.entity_type.manager']
-
-  logger.channel.next:
-    parent: logger.channel_base
-    arguments: ['next']
