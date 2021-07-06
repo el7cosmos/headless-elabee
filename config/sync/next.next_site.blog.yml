@@ -1,9 +1,0 @@
-uuid: 96636041-1be0-4802-afac-c06d47dbe9a5
-langcode: en
-status: true
-dependencies: {  }
-id: blog
-label: Blog
-base_url: ''
-preview_url: ''
-preview_secret: ''

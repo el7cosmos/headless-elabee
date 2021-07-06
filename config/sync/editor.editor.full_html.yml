@@ -54,7 +54,7 @@ settings:
             - Maximize
   plugins:
     stylescombo:
-      styles: 'div.code-title|Code Title'
+      styles: 'div.code-title.gatsby-code-title|Code Title'
     language:
       language_list: un
     codesnippet:
