@@ -60,12 +60,14 @@ settings:
     codesnippet:
       highlight_style: github
       highlight_languages:
+        basic: basic
         bash: bash
+        cpp: cpp
         php: php
+        pascal: pascal
         yaml: yaml
         apache: 0
         cs: 0
-        cpp: 0
         css: 0
         coffeescript: 0
         diff: 0
