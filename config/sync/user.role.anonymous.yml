@@ -14,4 +14,5 @@ permissions:
   - 'access site-wide contact form'
   - 'issue subrequests'
   - 'search content'
+  - 'sync gatsby fastbuild log entities'
   - 'use text format restricted_html'

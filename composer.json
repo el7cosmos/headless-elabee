@@ -42,6 +42,7 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/file_delete_ui": "^1.0@alpha",
+        "drupal/gatsby": "^1.0@RC",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
         "drupal/pathauto": "^1.8",

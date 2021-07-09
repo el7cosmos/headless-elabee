@@ -25,6 +25,7 @@ module:
   help: 0
   image: 0
   jsonapi: 0
+  jsonapi_extras: 0
   link: 0
   menu_link_content: 0
   node: 0
@@ -45,6 +46,9 @@ module:
   user: 0
   pathauto: 1
   views: 10
+  gatsby: 100
+  gatsby_instantpreview: 100
+  gatsby_fastbuilds: 101
   minimal: 1000
 theme:
   claro: 0

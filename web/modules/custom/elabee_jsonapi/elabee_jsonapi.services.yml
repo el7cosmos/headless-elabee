@@ -1,6 +1,7 @@
 parameters:
   jsonapi.enabled_resource_types:
     - file--file
+    - gatsby_log_entity--gatsby_log_entity
     - node--article
     - taxonomy_term--tags
 
