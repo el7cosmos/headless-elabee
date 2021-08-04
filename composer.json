@@ -35,7 +35,7 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "ext-redis": "*",
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.0",
         "drupal/codesnippet": "^1.7",
         "drupal/codetag": "^1.2",
