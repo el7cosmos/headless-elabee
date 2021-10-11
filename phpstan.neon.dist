@@ -1,11 +1,9 @@
 includes:
-#  - vendor/mglaman/phpstan-drupal/extension.neon
+  - vendor/mglaman/phpstan-drupal/extension.neon
   - vendor/phpstan/phpstan-deprecation-rules/rules.neon
 
 parameters:
   level: max
-  bootstrapFiles:
-    - vendor/mglaman/phpstan-drupal/drupal-autoloader.php
   paths:
     - .
   excludePaths:
@@ -18,54 +16,5 @@ parameters:
       - web/sites/default/default.settings.php
       - web/sites/default/files
       - web/sites/simpletest
-  fileExtensions:
-    - module
-    - theme
-    - inc
-    - install
-    - profile
-    - engine
-  drupal:
-    drupal_root: '%currentWorkingDirectory%'
-    entityTypeStorageMapping:
-      node: Drupal\node\NodeStorage
-      taxonomy_term: Drupal\taxonomy\TermStorage
-      user: Drupal\user\UserStorage
   stubFiles:
     - stubs/Symfony/Component/EventDispatcher/EventSubscriberInterface.php
-parametersSchema:
-  drupal: structure([
-    drupal_root: string()
-    entityTypeStorageMapping: arrayOf(string())
-  ])
-rules:
-  - PHPStan\Rules\Classes\PluginManagerInspectionRule
-  - PHPStan\Rules\Drupal\Coder\DiscouragedFunctionsRule
-  - PHPStan\Rules\Drupal\GlobalDrupalDependencyInjectionRule
-  - PHPStan\Rules\Drupal\PluginManager\PluginManagerSetsCacheBackendRule
-  - PHPStan\Rules\Deprecations\AccessDeprecatedConstant
-services:
-  -
-    class: PHPStan\Drupal\ServiceMap
-
-  -
-    class: PHPStan\Type\EntityTypeManagerGetStorageDynamicReturnTypeExtension
-    arguments:
-      entityTypeStorageMapping: %drupal.entityTypeStorageMapping%
-    tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
-  -
-    class: PHPStan\Type\ServiceDynamicReturnTypeExtension
-    tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
-  -
-    class: PHPStan\Reflection\EntityFieldsViaMagicReflectionExtension
-    tags: [phpstan.broker.propertiesClassReflectionExtension]
-  -
-    class: PHPStan\Rules\Drupal\LoadIncludes
-    tags: [phpstan.rules.rule]
-    arguments:
-      - %drupal.drupal_root%
-  -
-    class: PHPStan\Rules\Drupal\ModuleLoadInclude
-    tags: [phpstan.rules.rule]
-    arguments:
-      - %drupal.drupal_root%

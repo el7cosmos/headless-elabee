@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05a604ae415f3ed7896c6ac7b6815f36",
+    "content-hash": "e4778e29d926ed19453ce196448a5f4c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8568,16 +8568,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "0.12.13",
+            "version": "0.12.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "c149cae44eeb1edddac72fe9c1c11449abab782e"
+                "reference": "1d65da838f3f5136e30e7a7023c235775f30c53e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/c149cae44eeb1edddac72fe9c1c11449abab782e",
-                "reference": "c149cae44eeb1edddac72fe9c1c11449abab782e",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/1d65da838f3f5136e30e7a7023c235775f30c53e",
+                "reference": "1d65da838f3f5136e30e7a7023c235775f30c53e",
                 "shasum": ""
             },
             "require": {
@@ -8649,7 +8649,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/0.12.13"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/0.12.15"
             },
             "funding": [
                 {
@@ -8665,7 +8665,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-27T13:48:19+00:00"
+            "time": "2021-10-06T20:17:36+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -8845,20 +8845,20 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.3",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822"
+                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
+                "url": "https://api.github.com/repos/nette/utils/zipball/9cd80396ca58d7969ab44fc7afcf03624dfa526e",
+                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2 <8.1"
+                "php": ">=7.2 <8.2"
             },
             "conflict": {
                 "nette/di": "<3.0.6"
@@ -8924,9 +8924,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.3"
+                "source": "https://github.com/nette/utils/tree/v3.2.5"
             },
-            "time": "2021-08-16T21:05:00+00:00"
+            "time": "2021-09-20T10:50:11+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -9319,16 +9319,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.96",
+            "version": "0.12.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a98bdc51318f20fcae8c953d266f81a70254917f"
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a98bdc51318f20fcae8c953d266f81a70254917f",
-                "reference": "a98bdc51318f20fcae8c953d266f81a70254917f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
                 "shasum": ""
             },
             "require": {
@@ -9359,7 +9359,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.96"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
             },
             "funding": [
                 {
@@ -9379,7 +9379,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-21T11:55:13+00:00"
+            "time": "2021-09-12T20:09:55+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
