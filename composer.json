@@ -89,6 +89,9 @@
         "apcu-autoloader": true,
         "sort-packages": true
     },
+    "scripts": {
+        "serve": "drush serve 9000 --quiet"
+    },
     "extra": {
         "drupal-scaffold": {
             "gitignore": true,
