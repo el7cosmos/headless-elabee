@@ -1,9 +1,9 @@
 server_url: 'http://localhost:8000'
 preview_callback_url: 'http://localhost:8000/__refresh'
+path_mapping: ''
 incrementalbuild_url: ''
 build_published: true
 preview_entity_types:
   - node
   - taxonomy_term
-path_mapping: ''
 secret_key: ''
