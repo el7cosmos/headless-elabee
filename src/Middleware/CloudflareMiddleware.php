@@ -33,6 +33,8 @@ class CloudflareMiddleware implements HttpKernelInterface {
     if ($request->headers->has('CF-Visitor') && $visitor = $request->headers->get('CF-Visitor')) {
       try {
         $visitor = json_decode($visitor, TRUE, 512, JSON_THROW_ON_ERROR);
+        assert(is_array($visitor));
+
         $request->headers->set('X-Forwarded-Proto', $visitor['scheme']);
         if ($visitor['scheme'] === 'https') {
           $request->headers->set('X-Forwarded-Port', '443');

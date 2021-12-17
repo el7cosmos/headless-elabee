@@ -6,6 +6,7 @@ parameters:
   level: max
   paths:
     - .
+  checkMissingIterableValueType: false
   excludePaths:
     analyse:
       - vendor
@@ -16,5 +17,3 @@ parameters:
       - web/sites/default/default.settings.php
       - web/sites/default/files
       - web/sites/simpletest
-  stubFiles:
-    - stubs/Symfony/Component/EventDispatcher/EventSubscriberInterface.php
