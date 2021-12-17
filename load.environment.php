@@ -8,18 +8,18 @@
  * https://getcomposer.org/doc/04-schema.md#files.
  */
 
-use Symfony\Component\Dotenv\Dotenv;
-use Symfony\Component\Dotenv\Exception\FormatException;
-use Symfony\Component\Dotenv\Exception\PathException;
+use Dotenv\Dotenv;
+use Dotenv\Exception\InvalidEncodingException;
+use Dotenv\Exception\InvalidFileException;
+use Dotenv\Exception\InvalidPathException;
 
 /**
  * Load any .env file. See /.env.example.
  */
-$dotenv = new Dotenv();
-$dotenv->usePutenv();
+$dotenv = Dotenv::createImmutable(__DIR__);
 try {
-  $dotenv->load(__DIR__ . '/.env');
+  $dotenv->load();
 }
-catch (FormatException | PathException $e) {
+catch (InvalidPathException | InvalidEncodingException | InvalidFileException $e) {
   // Do nothing. Production environments rarely use .env files.
 }
