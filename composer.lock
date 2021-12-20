@@ -2755,16 +2755,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "11.0.0-rc2",
+            "version": "11.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "5ea217170347fe74c16fb342e80f180cea4bd162"
+                "reference": "b74f9e580f5522d1da402df417987c4698b40035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/5ea217170347fe74c16fb342e80f180cea4bd162",
-                "reference": "5ea217170347fe74c16fb342e80f180cea4bd162",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/b74f9e580f5522d1da402df417987c4698b40035",
+                "reference": "b74f9e580f5522d1da402df417987c4698b40035",
                 "shasum": ""
             },
             "require": {
@@ -2783,7 +2783,7 @@
                 "league/container": "^3.4",
                 "php": ">=7.4",
                 "psr/log": "~1.0",
-                "psy/psysh": "~0.6",
+                "psy/psysh": "~0.11",
                 "symfony/event-dispatcher": "^4.0",
                 "symfony/finder": "^4.0 || ^5",
                 "symfony/polyfill-php80": "^1.23",
@@ -2843,8 +2843,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Drush\\": "src/",
-                    "Drush\\Internal\\": "src/internal-forks"
+                    "Drush\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2892,7 +2891,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc2"
+                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc3"
             },
             "funding": [
                 {
@@ -2900,7 +2899,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-03T13:14:25+00:00"
+            "time": "2021-12-20T11:43:25+00:00"
         },
         {
             "name": "e0ipso/shaper",
@@ -11928,8 +11927,7 @@
         "drupal/gatsby": 5,
         "drupal/gin": 15,
         "drupal/gin_login": 5,
-        "drupal/s3fs": 10,
-        "drush/drush": 5
+        "drupal/s3fs": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
