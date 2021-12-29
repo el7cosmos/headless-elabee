@@ -491,27 +491,28 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "308f6ac178566a1ce9aa90ed908dac90a2c1e707"
+                "reference": "df01c1f1449c6b46bf87051e0b418bd5d5e44a7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/308f6ac178566a1ce9aa90ed908dac90a2c1e707",
-                "reference": "308f6ac178566a1ce9aa90ed908dac90a2c1e707",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/df01c1f1449c6b46bf87051e0b418bd5d5e44a7a",
+                "reference": "df01c1f1449c6b46bf87051e0b418bd5d5e44a7a",
                 "shasum": ""
             },
             "require": {
                 "consolidation/output-formatters": "^4.1.1",
                 "php": ">=7.1.3",
                 "psr/log": "^1|^2",
-                "symfony/console": "^4.4.8|~5.1.0",
-                "symfony/event-dispatcher": "^4.4.8|^5",
-                "symfony/finder": "^4.4.8|^5"
+                "symfony/console": "^4.4.8|^5|^6",
+                "symfony/event-dispatcher": "^4.4.8|^5|^6",
+                "symfony/finder": "^4.4.8|^5|^6"
             },
             "require-dev": {
+                "composer-runtime-api": "^2.0",
                 "phpunit/phpunit": "^7.5.20 || ^8 || ^9",
                 "squizlabs/php_codesniffer": "^3",
                 "yoast/phpunit-polyfills": "^0.2.0"
@@ -540,9 +541,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.4.0"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.0"
             },
-            "time": "2021-09-30T01:08:15+00:00"
+            "time": "2021-12-27T19:34:17+00:00"
         },
         {
             "name": "consolidation/config",
@@ -753,30 +754,30 @@
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.1.2",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "5821e6ae076bf690058a4de6c94dce97398a69c9"
+                "reference": "27cf221f6e59b1debed0c6c94015e78cd5f10e24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/5821e6ae076bf690058a4de6c94dce97398a69c9",
-                "reference": "5821e6ae076bf690058a4de6c94dce97398a69c9",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/27cf221f6e59b1debed0c6c94015e78cd5f10e24",
+                "reference": "27cf221f6e59b1debed0c6c94015e78cd5f10e24",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
                 "php": ">=7.1.3",
-                "symfony/console": "^4|^5",
-                "symfony/finder": "^4|^5"
+                "symfony/console": "^4|^5|^6",
+                "symfony/finder": "^4|^5|^6"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.4.2",
                 "phpunit/phpunit": ">=7",
                 "squizlabs/php_codesniffer": "^3",
-                "symfony/var-dumper": "^4",
-                "symfony/yaml": "^4",
+                "symfony/var-dumper": "^4|^5|^6",
+                "symfony/yaml": "^4|^5|^6",
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
             "suggest": {
@@ -806,9 +807,9 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.1.2"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.2.0"
             },
-            "time": "2020-12-12T19:04:59+00:00"
+            "time": "2021-12-27T14:30:41+00:00"
         },
         {
             "name": "consolidation/robo",
@@ -966,16 +967,16 @@
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a"
+                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/e824b57253d9174f4a500f87e6d0e1e497c2a50a",
-                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/2d514a1b278a1c5f28df20df317631f9829a88f2",
+                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2",
                 "shasum": ""
             },
             "require": {
@@ -1018,9 +1019,9 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/3.1.1"
+                "source": "https://github.com/consolidation/site-alias/tree/3.1.2"
             },
-            "time": "2021-09-21T00:30:48+00:00"
+            "time": "2021-10-29T17:58:54+00:00"
         },
         {
             "name": "consolidation/site-process",
@@ -2755,16 +2756,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "11.0.0-rc2",
+            "version": "11.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "5ea217170347fe74c16fb342e80f180cea4bd162"
+                "reference": "0824e962aab2a1ef9ac8ef01f713e41b5be0e8ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/5ea217170347fe74c16fb342e80f180cea4bd162",
-                "reference": "5ea217170347fe74c16fb342e80f180cea4bd162",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/0824e962aab2a1ef9ac8ef01f713e41b5be0e8ac",
+                "reference": "0824e962aab2a1ef9ac8ef01f713e41b5be0e8ac",
                 "shasum": ""
             },
             "require": {
@@ -2783,7 +2784,7 @@
                 "league/container": "^3.4",
                 "php": ">=7.4",
                 "psr/log": "~1.0",
-                "psy/psysh": "~0.6",
+                "psy/psysh": "~0.11",
                 "symfony/event-dispatcher": "^4.0",
                 "symfony/finder": "^4.0 || ^5",
                 "symfony/polyfill-php80": "^1.23",
@@ -2793,7 +2794,7 @@
                 "webmozart/path-util": "^2.1.0"
             },
             "conflict": {
-                "drupal/core": "<= 8",
+                "drupal/core": "<= 9.1",
                 "drupal/migrate_run": "*",
                 "drupal/migrate_tools": "<= 5"
             },
@@ -2843,8 +2844,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Drush\\": "src/",
-                    "Drush\\Internal\\": "src/internal-forks"
+                    "Drush\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2892,7 +2892,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc2"
+                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc4"
             },
             "funding": [
                 {
@@ -2900,7 +2900,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-03T13:14:25+00:00"
+            "time": "2021-12-28T23:42:41+00:00"
         },
         {
             "name": "e0ipso/shaper",
@@ -5418,16 +5418,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.30",
+            "version": "v4.4.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "70362f1e112280d75b30087c7598b837c1b468b6"
+                "reference": "1fef05633cd61b629e963e5d8200fb6b67ecf42c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/70362f1e112280d75b30087c7598b837c1b468b6",
-                "reference": "70362f1e112280d75b30087c7598b837c1b468b6",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/1fef05633cd61b629e963e5d8200fb6b67ecf42c",
+                "reference": "1fef05633cd61b629e963e5d8200fb6b67ecf42c",
                 "shasum": ""
             },
             "require": {
@@ -5460,7 +5460,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.30"
+                "source": "https://github.com/symfony/finder/tree/v4.4.36"
             },
             "funding": [
                 {
@@ -5476,7 +5476,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-04T20:31:23+00:00"
+            "time": "2021-12-15T10:33:10+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -6310,16 +6310,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.4.0",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "9ffaaba53c61ba75a3c7a3a779051d1e9ec4fd2d"
+                "reference": "e6a5d5ecf6589c5247d18e0e74e30b11dfd51a3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/9ffaaba53c61ba75a3c7a3a779051d1e9ec4fd2d",
-                "reference": "9ffaaba53c61ba75a3c7a3a779051d1e9ec4fd2d",
+                "url": "https://api.github.com/repos/symfony/string/zipball/e6a5d5ecf6589c5247d18e0e74e30b11dfd51a3d",
+                "reference": "e6a5d5ecf6589c5247d18e0e74e30b11dfd51a3d",
                 "shasum": ""
             },
             "require": {
@@ -6376,7 +6376,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v5.4.0"
+                "source": "https://github.com/symfony/string/tree/v5.4.2"
             },
             "funding": [
                 {
@@ -6392,7 +6392,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-24T10:02:00+00:00"
+            "time": "2021-12-16T21:52:00+00:00"
         },
         {
             "name": "symfony/translation",
@@ -11928,8 +11928,7 @@
         "drupal/gatsby": 5,
         "drupal/gin": 15,
         "drupal/gin_login": 5,
-        "drupal/s3fs": 10,
-        "drush/drush": 5
+        "drupal/s3fs": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
