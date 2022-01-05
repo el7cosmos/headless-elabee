@@ -87,7 +87,11 @@
     "prefer-stable": true,
     "config": {
         "apcu-autoloader": true,
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "scripts": {
         "serve": "drush serve 9000 --quiet"
