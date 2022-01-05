@@ -66,12 +66,13 @@
         "paragonie/random_compat": "*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-intl-grapheme": "*",
+        "symfony/polyfill-intl-idn": "*",
+        "symfony/polyfill-intl-normalizer": "*",
         "symfony/polyfill-mbstring": "*",
         "symfony/polyfill-php72": "*",
         "symfony/polyfill-php73": "*",
-        "symfony/polyfill-php80": "*",
-        "symfony/polyfill-intl-idn": "*",
-        "symfony/polyfill-intl-normalizer": "*"
+        "symfony/polyfill-php80": "*"
     },
     "autoload": {
         "psr-4": {
