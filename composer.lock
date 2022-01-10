@@ -2760,16 +2760,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "11.0.0-rc5",
+            "version": "11.0.0-rc7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "c002d7253a0db8b4eab82a1efd4c7d016550fdbb"
+                "reference": "6e5b22b502dad11a39785c00acaa41afb776b463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/c002d7253a0db8b4eab82a1efd4c7d016550fdbb",
-                "reference": "c002d7253a0db8b4eab82a1efd4c7d016550fdbb",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/6e5b22b502dad11a39785c00acaa41afb776b463",
+                "reference": "6e5b22b502dad11a39785c00acaa41afb776b463",
                 "shasum": ""
             },
             "require": {
@@ -2779,7 +2779,7 @@
                 "consolidation/config": "^1.2",
                 "consolidation/filter-via-dot-access-data": "^1",
                 "consolidation/robo": "^3",
-                "consolidation/site-alias": "^3.0.0@stable",
+                "consolidation/site-alias": "^3.1.3",
                 "consolidation/site-process": "^4",
                 "enlightn/security-checker": "^1",
                 "ext-dom": "*",
@@ -2896,7 +2896,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc5"
+                "source": "https://github.com/drush-ops/drush/tree/11.0.0-rc7"
             },
             "funding": [
                 {
@@ -2904,7 +2904,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-31T18:25:32+00:00"
+            "time": "2022-01-09T16:29:06+00:00"
         },
         {
             "name": "e0ipso/shaper",
@@ -11849,8 +11849,7 @@
         "drupal/gatsby": 5,
         "drupal/gin": 15,
         "drupal/gin_login": 5,
-        "drupal/s3fs": 10,
-        "drush/drush": 5
+        "drupal/s3fs": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -11862,5 +11861,5 @@
         "ext-redis": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
