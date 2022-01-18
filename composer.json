@@ -48,7 +48,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/redis": "^1.4",
         "drupal/s3fs": "^3.0@beta",
-        "drush/drush": "^11.0@rc"
+        "drush/drush": "^11.0"
     },
     "require-dev": {
         "drupal/config_inspector": "^2.0",
