@@ -6,4 +6,7 @@ build_published: true
 preview_entity_types:
   - node
   - taxonomy_term
+log_published: true
+delete_log_entities: false
+log_expiration: '604800'
 secret_key: ''

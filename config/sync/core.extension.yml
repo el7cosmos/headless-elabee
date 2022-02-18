@@ -49,8 +49,6 @@ module:
   pathauto: 1
   views: 10
   gatsby: 100
-  gatsby_instantpreview: 100
-  gatsby_fastbuilds: 101
   minimal: 1000
 theme:
   claro: 0
