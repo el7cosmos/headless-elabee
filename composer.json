@@ -44,7 +44,7 @@
         "drupal/file_delete_ui": "^1.0@alpha",
         "drupal/gatsby": "^2.0@beta",
         "drupal/gin": "^3.0@beta",
-        "drupal/gin_login": "^1.0@RC",
+        "drupal/gin_login": "^1.2",
         "drupal/pathauto": "^1.9",
         "drupal/redis": "^1.4",
         "drupal/s3fs": "^3.0@beta",
