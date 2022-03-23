@@ -2172,17 +2172,17 @@
         },
         {
             "name": "drupal/gatsby",
-            "version": "2.0.0-beta2",
+            "version": "2.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gatsby.git",
-                "reference": "2.0.0-beta2"
+                "reference": "2.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gatsby-2.0.0-beta2.zip",
-                "reference": "2.0.0-beta2",
-                "shasum": "689f9a8ddd5c225f2719d01bbb9511a7ce4c531c"
+                "url": "https://ftp.drupal.org/files/projects/gatsby-2.0.0-rc1.zip",
+                "reference": "2.0.0-rc1",
+                "shasum": "d5a8a001a00e17942b995a127303a2c832a1b52b"
             },
             "require": {
                 "drupal/core": "^9",
@@ -2191,11 +2191,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-beta2",
-                    "datestamp": "1642183617",
+                    "version": "2.0.0-rc1",
+                    "datestamp": "1646336978",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -11850,7 +11850,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/file_delete_ui": 15,
-        "drupal/gatsby": 10,
         "drupal/gin": 10,
         "drupal/s3fs": 10
     },
