@@ -8735,16 +8735,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.1.13",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "6150d442fd0a272c5a031647e2e145cdebec82cb"
+                "reference": "479217bf286ef87aaff58c40ec762c868acfb3e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/6150d442fd0a272c5a031647e2e145cdebec82cb",
-                "reference": "6150d442fd0a272c5a031647e2e145cdebec82cb",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/479217bf286ef87aaff58c40ec762c868acfb3e8",
+                "reference": "479217bf286ef87aaff58c40ec762c868acfb3e8",
                 "shasum": ""
             },
             "require": {
@@ -8820,7 +8820,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.13"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.14"
             },
             "funding": [
                 {
@@ -8836,7 +8836,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-09T12:34:47+00:00"
+            "time": "2022-03-23T20:50:16+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -9460,20 +9460,20 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.4.10",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "898c479c39caa727bedf4311dd294a8f4e250e72"
+                "reference": "39953ac1452a8843702ee41a35b4861d3e8207a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/898c479c39caa727bedf4311dd294a8f4e250e72",
-                "reference": "898c479c39caa727bedf4311dd294a8f4e250e72",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/39953ac1452a8843702ee41a35b4861d3e8207a7",
+                "reference": "39953ac1452a8843702ee41a35b4861d3e8207a7",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1|^8.0"
+                "php": "^7.2|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -9495,7 +9495,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.4.10"
+                "source": "https://github.com/phpstan/phpstan/tree/1.5.3"
             },
             "funding": [
                 {
@@ -9515,7 +9515,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-14T10:25:45+00:00"
+            "time": "2022-03-30T21:55:08+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
