@@ -45,7 +45,7 @@
         "drupal/gatsby": "^2.0@rc",
         "drupal/gin": "^3.0@beta",
         "drupal/gin_login": "^1.2",
-        "drupal/pathauto": "^1.9",
+        "drupal/pathauto": "^1.10",
         "drupal/redis": "^1.4",
         "drupal/s3fs": "^3.0@beta",
         "drush/drush": "^11.0"
