@@ -8737,16 +8737,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.1.14",
+            "version": "1.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "479217bf286ef87aaff58c40ec762c868acfb3e8"
+                "reference": "2c72ac675e5630e1f421adb1bf4e6546310d6b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/479217bf286ef87aaff58c40ec762c868acfb3e8",
-                "reference": "479217bf286ef87aaff58c40ec762c868acfb3e8",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/2c72ac675e5630e1f421adb1bf4e6546310d6b05",
+                "reference": "2c72ac675e5630e1f421adb1bf4e6546310d6b05",
                 "shasum": ""
             },
             "require": {
@@ -8765,6 +8765,7 @@
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-strict-rules": "^1.0",
                 "phpunit/phpunit": "^6.5 || ^7.5 || ^8.0 || ^9",
+                "slevomat/coding-standard": "^7.1",
                 "squizlabs/php_codesniffer": "^3.3",
                 "symfony/phpunit-bridge": "^3.4.3 || ^4.4 || ^5.4 || ^6.0"
             },
@@ -8797,7 +8798,8 @@
                 },
                 "phpstan": {
                     "includes": [
-                        "extension.neon"
+                        "extension.neon",
+                        "rules.neon"
                     ]
                 }
             },
@@ -8822,7 +8824,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.14"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.1.16"
             },
             "funding": [
                 {
@@ -8838,7 +8840,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-23T20:50:16+00:00"
+            "time": "2022-04-13T20:19:23+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -9457,16 +9459,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.5.3",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "39953ac1452a8843702ee41a35b4861d3e8207a7"
+                "reference": "6128620b98292e0b69ea6d799871d77163681c8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/39953ac1452a8843702ee41a35b4861d3e8207a7",
-                "reference": "39953ac1452a8843702ee41a35b4861d3e8207a7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6128620b98292e0b69ea6d799871d77163681c8e",
+                "reference": "6128620b98292e0b69ea6d799871d77163681c8e",
                 "shasum": ""
             },
             "require": {
@@ -9492,7 +9494,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.5.3"
+                "source": "https://github.com/phpstan/phpstan/tree/1.6.3"
             },
             "funding": [
                 {
@@ -9512,7 +9514,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-30T21:55:08+00:00"
+            "time": "2022-04-28T11:27:53+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -11829,5 +11831,5 @@
         "ext-redis": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
