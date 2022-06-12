@@ -884,7 +884,6 @@ $config['s3fs.settings']['hostname'] = $_ENV['S3_HOSTNAME'];
 $config['gatsby.settings']['server_url'] = $_ENV['GATSBY_SERVER_URL'];
 $config['gatsby.settings']['preview_callback_url'] = $_ENV['GATSBY_PREVIEW_CALLBACK_URL'];
 $config['gatsby.settings']['incrementalbuild_url'] = $_ENV['GATSBY_INCREMENTAL_BUILD_URL'];
-$config['gatsby.settings']['secret_key'] = $_ENV['GATSBY_SECRET_KEY'];
 
 /**
  * Load local development override configuration, if available.

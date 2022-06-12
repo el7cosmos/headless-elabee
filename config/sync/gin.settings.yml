@@ -1,5 +1,3 @@
-_core:
-  default_config_hash: QdiqmcH9tjpstXqCQKv4G4rHYE4HjWLFkVzyqooqEWM
 favicon:
   use_default: true
 features:
@@ -7,17 +5,15 @@ features:
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-third_party_settings:
-  shortcut:
-    module_link: true
+logo:
+  use_default: true
 preset_accent_color: orange
 preset_focus_color: gin
-enable_darkmode: false
+enable_darkmode: auto
 classic_toolbar: horizontal
-icon_default: true
-icon_path: ''
+secondary_toolbar_frontend: false
 high_contrast_mode: false
 accent_color: ''
 focus_color: ''
-icon_upload: ''
+show_description_toggle: true
 show_user_theme_settings: false
