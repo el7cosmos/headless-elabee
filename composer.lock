@@ -2228,17 +2228,17 @@
         },
         {
             "name": "drupal/gatsby",
-            "version": "2.0.0-rc1",
+            "version": "2.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gatsby.git",
-                "reference": "2.0.0-rc1"
+                "reference": "2.0.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gatsby-2.0.0-rc1.zip",
-                "reference": "2.0.0-rc1",
-                "shasum": "d5a8a001a00e17942b995a127303a2c832a1b52b"
+                "url": "https://ftp.drupal.org/files/projects/gatsby-2.0.0-rc2.zip",
+                "reference": "2.0.0-rc2",
+                "shasum": "35eece39be93a19f94bf5599844a86c08d01e4cb"
             },
             "require": {
                 "drupal/core": "^9",
@@ -2247,8 +2247,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-rc1",
-                    "datestamp": "1646336978",
+                    "version": "2.0.0-rc2",
+                    "datestamp": "1658878621",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2261,12 +2261,12 @@
             ],
             "authors": [
                 {
-                    "name": "DamienMcKenna",
-                    "homepage": "https://www.drupal.org/user/108450"
-                },
-                {
                     "name": "codekarate",
                     "homepage": "https://www.drupal.org/user/506260"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
                 },
                 {
                     "name": "drupalninja99",
@@ -2287,6 +2287,10 @@
                 {
                     "name": "mrjmd",
                     "homepage": "https://www.drupal.org/user/1800446"
+                },
+                {
+                    "name": "shrop",
+                    "homepage": "https://www.drupal.org/user/14767"
                 }
             ],
             "description": "Enables Live Preview for Gatsby",
@@ -8982,16 +8986,16 @@
         },
         {
             "name": "mikey179/vfsstream",
-            "version": "v1.6.10",
+            "version": "v1.6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bovigo/vfsStream.git",
-                "reference": "250c0825537d501e327df879fb3d4cd751933b85"
+                "reference": "17d16a85e6c26ce1f3e2fa9ceeacdc2855db1e9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/250c0825537d501e327df879fb3d4cd751933b85",
-                "reference": "250c0825537d501e327df879fb3d4cd751933b85",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/17d16a85e6c26ce1f3e2fa9ceeacdc2855db1e9f",
+                "reference": "17d16a85e6c26ce1f3e2fa9ceeacdc2855db1e9f",
                 "shasum": ""
             },
             "require": {
@@ -9029,7 +9033,7 @@
                 "source": "https://github.com/bovigo/vfsStream/tree/master",
                 "wiki": "https://github.com/bovigo/vfsStream/wiki"
             },
-            "time": "2021-09-25T08:05:01+00:00"
+            "time": "2022-02-23T02:02:42+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -11955,7 +11959,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/file_delete_ui": 15,
-        "drupal/gatsby": 5,
         "drupal/gin": 10,
         "drupal/s3fs": 10
     },
