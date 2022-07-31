@@ -55,8 +55,6 @@ settings:
   plugins:
     stylescombo:
       styles: 'div.code-title.gatsby-code-title|Code Title'
-    language:
-      language_list: un
     codesnippet:
       highlight_style: github
       highlight_languages:
