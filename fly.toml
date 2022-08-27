@@ -3,7 +3,15 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-[env]
+#[build]
+#  image = "el7cosmos/nginx-unit-drupal:1.27.0-php8.1"
+#  dockerfile  = "docker/Dockerfile"
+
+#[deploy]
+#  release_command = "chown -R unit:unit /opt/drupal/web/sites/default/files"
+#
+#[env]
+#  TRUSTED_HOST_PATTERNS = "^.+\\.elabee\\.co$:^headless-elabee\\.fly\\.dev$"
 
 [experimental]
   allowed_public_ports = []
@@ -34,3 +42,7 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[mounts]
+source="drupal"
+destination="/opt/drupal/web/sites/default/files"

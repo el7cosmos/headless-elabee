@@ -1,22 +1,19 @@
-*.bak
-
 .dockerignore
+.editorconfig
 .env*
 .git*
-.idea
-.phpstorm.meta.php
-.phpunit.result.cache
 
 Dockerfile
 load.environment.php
-Makefile
 phpcs.xml*
 phpstan.neon*
 phpunit.xml*
 Procfile
-report
-script.php
+README.md
 stubs
-utils
-web/sites/default/files
-web/sites/simpletest
+
+# Heroku files
+app.json
+logo.svg
+nginx.conf.php
+nginx.inc.conf
