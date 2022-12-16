@@ -40,7 +40,7 @@
         "drupal/codesnippet": "^1.7",
         "drupal/codetag": "^1.2",
         "drupal/consumer_image_styles": "^4.0",
-        "drupal/core-composer-scaffold": "^9.4",
+        "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-recommended": "^9.4",
         "drupal/file_delete_ui": "^1.0@alpha",
         "drupal/gatsby": "^2.0@rc",
