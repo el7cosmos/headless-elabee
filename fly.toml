@@ -1,0 +1,51 @@
+app = "headless-elabee"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+#[build]
+#  image = "el7cosmos/nginx-unit-drupal:1.27.0-php8.1"
+#  dockerfile  = "docker/Dockerfile"
+
+#[deploy]
+#  release_command = "chown -R unit:unit /opt/drupal/web/sites/default/files"
+#
+#[env]
+#  TRUSTED_HOST_PATTERNS = "^.+\\.elabee\\.co$:^headless-elabee\\.fly\\.dev$"
+
+[experimental]
+allowed_public_ports = []
+auto_rollback = true
+
+[[services]]
+http_checks = []
+internal_port = 80
+processes = ["app"]
+protocol = "tcp"
+script_checks = []
+[services.concurrency]
+hard_limit = 25
+soft_limit = 20
+type = "connections"
+
+[[services.ports]]
+force_https = true
+handlers = ["http"]
+port = 80
+
+[[services.ports]]
+handlers = ["tls", "http"]
+port = 443
+
+[[services.tcp_checks]]
+grace_period = "1s"
+interval = "15s"
+restart_limit = 0
+timeout = "2s"
+
+[deploy]
+release_command = "php -dvariables_order=EGPCS /opt/drupal/vendor/bin/drush deploy --root /opt/drupal/web"
+
+[mounts]
+source = "drupal"
+destination = "/opt/drupal/web/sites/default/files"

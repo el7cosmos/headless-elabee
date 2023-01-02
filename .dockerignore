@@ -1,0 +1,19 @@
+.dockerignore
+.editorconfig
+.env*
+.git*
+
+Dockerfile
+load.environment.php
+phpcs.xml*
+phpstan.neon*
+phpunit.xml*
+Procfile
+README.md
+stubs
+
+# Heroku files
+app.json
+logo.svg
+nginx.conf.php
+nginx.inc.conf
